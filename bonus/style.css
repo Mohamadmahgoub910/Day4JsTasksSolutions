@@ -1,0 +1,13 @@
+ body{
+	 background-color:rgb(155, 221, 155);
+ }
+table, th, td {
+	border: 1px solid rgb(116, 111, 111);
+	
+}
+#btna td input{
+	width: 100%;
+}
+#show th, #show td{
+	padding: 13px;
+}
