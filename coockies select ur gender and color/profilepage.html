@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="cookie.js" ></script>
+
+	
+</head>
+<body>
+<p>Hello</p>
+
+
+<span id="Msg"></span>
+
+<img id="img1"  name ='img1' src="">
+
+<script type="text/javascript">
+		var name = displayCookie('name');
+		var age = displayCookie('age');
+		var gender = displayCookie('gender');
+		var color = displayCookie('color');
+		var visit = eval(displayCookie('visit'));		
+		createCookie('visit',visit+1,55);
+		
+		//alert(color);
+document.write(name);
+		
+document.write(age);
+		if(color == 'Red'){
+			//document.getElementById("Msg").innerHTML = "Welcome <b>" + name +" </b>"
+			//alert(color);
+			document.write("Welcome <b>" + name.fontcolor("red") + "</b>" + "you've visited the website " + visit + "time(s)");
+		}
+		else if(color == 'Green'){
+			//alert(color);
+			document.write("Welcome <b>" + name.fontcolor("green") + "</b>" + "you've visited the website " + visit + "time(s)");
+
+		}
+		else{
+			//alert("hhh" + color);
+			document.write("Welcome <b>" + name.fontcolor("blue") +"</b>" + "you ve visited the website " + visit + "time");
+
+		}
+
+		if(gender == 'm'){
+			document.getElementById('img1').src = "C1.jpg";
+		}
+		else{
+			document.getElementById('img1').src = "C2.jpg";
+
+		}
+	
+		
+	</script>
+
+</body>
+</html>
